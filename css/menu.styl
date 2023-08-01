@@ -1,0 +1,209 @@
+.prd-nav-wrap
+    font-size calc(100vw / 120)
+    position fixed
+    width 100%
+    left 0
+    transform translateX(-100%)
+    z-index 2223
+    // display none
+    transition transform .2s linear
+
+    &--active
+        transform translateX(0)
+        display block
+
+    @media (max-width: 1024px)
+        font-size calc(100vw/48)
+        width 50%
+        max-height 100vh
+        margin-left auto
+        overflow: auto
+        top 0
+        right 0
+        left unset
+        transform translateX(100%)
+
+        .mCSB_container
+            margin-right 0!important
+        
+    @media (max-width: 767px)
+        font-size calc(100vw/20)
+        width 75%
+
+.prd-nav
+    &__list
+        display grid
+        grid-template-columns repeat(10, 1fr)
+        grid-column-gap 1px
+        background-color #fff
+
+        @media (max-width: 1024px)
+            grid-template-rows: repeat(5, 1fr);
+            grid-template-columns repeat(2, 1fr)
+            grid-gap 1px
+
+    &__li
+        background-color #E33C91
+        display flex
+        justify-content center
+        align-items center
+        overflow hidden
+    
+    &__logo
+        width (140/16em)
+
+        @media (max-width: 767px)
+            width (80/16em)
+    
+    &__item
+        display flex
+        flex-direction column
+        justify-content flex-start 
+        align-items center 
+        position relative
+        width 100%
+        height 100%
+        padding-top (20/16em)
+        
+        @media (max-width: 1024px)
+            padding-bottom (6/16em)
+        
+        @media (max-width: 767px)
+            padding-top (12/16em)
+
+    &__img
+        display block
+        margin-bottom (20/16em)
+        max-height (150/16em)
+
+        @media (max-width: 767px)
+            margin-bottom (12/16em)
+
+        img
+            max-height (150/16em)
+            height 100%
+            transition all .2s linear
+
+            @media (max-width: 1024px)
+                max-height (100/16em)
+            
+            @media (max-width: 767px)
+                max-height (58/16em)
+    
+    &__item-descr
+        width 100%
+        font-size (12/16em)
+        text-align center
+        text-transform uppercase
+        color #fff
+        font-weight 700
+        visibility hidden
+        position absolute
+        opacity 0
+        transform translateY(50%)translateX(-50%)
+        transition opacity .3s linear, transform .2s linear
+        top (144/12em) 
+        left 50%
+        line-height (14/12)
+
+        @media (max-width: 1024px)
+            position relative
+            visibility visible
+            opacity 1
+            top unset
+            left unset
+            transform translateY(0)translateX(0)
+    
+        @media (max-width: 767px)
+            font-size (6/16em)
+
+    &__anchor-link
+        position absolute
+        width 100%
+        height 100%
+        top 0
+        left 0
+        z-index 2
+        opacity 0
+        
+        &:hover,
+        &:focus
+            text-decoration none
+        
+        &:hover
+            &~.prd-nav__item-descr
+                visibility visible
+                opacity 1
+                transform translateY(0)translateX(-50%)
+
+                @media (max-width: 1024px)
+                    transform translateY(0)translateX(0)
+
+            &~.prd-nav__img
+                img
+                    max-height (100/16em)
+
+                    @media (max-width: 1024px)
+                        max-height (100/16em)
+                    
+                    @media (max-width: 767px)
+                        max-height (58/16em)
+
+.prd-nav-overlay
+    display none
+    
+    @media (max-width: 1024px)
+        position fixed
+        z-index 2222
+        width 100%
+        height 100%
+        top 0
+        left 0
+        background-color #000
+        opacity 0.5
+        
+        &--visible
+            display block
+
+.prd-nav-trigger
+    border 0
+    background-color #E33C91
+    width (140/16em)
+    height (140/16em)
+    display flex
+    align-items center
+    justify-content center
+    position fixed
+    z-index 2222
+    cursor pointer
+    font-size calc(100vw / 120)
+
+    @media (max-width: 1024px)
+        border-radius 100%
+        font-size calc(100vw/48)
+        width (80/16em)
+        height (80/16em)
+        right 20px
+        top 90px
+        
+    @media (max-width: 767px)
+        font-size calc(100vw/20)
+        width (40/16em)
+        height (40/16em)
+        top 70px
+
+    &__logo
+        width (92/16em)
+
+        @media (max-width: 1024px)
+            display none
+
+    &__burger
+        display none
+
+        @media (max-width: 1024px)
+            width (28/16em)
+            display block
+        
+        @media (max-width: 767px)
+            width (14/16em)

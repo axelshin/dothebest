@@ -1,0 +1,327 @@
+@media (max-width: 479px)
+{
+    /*---------------
+        Main styles
+    ---------------*/
+	body {
+		font-size: 14px;
+	}
+
+
+	.buy-link {
+		font-size: 10px;
+		min-width: 100px!important;
+		line-height: 30px;
+		height: 30px;
+		padding: 0 19px;
+	}
+
+	.buy-link span {
+		padding-right: 23px;
+	}
+
+	.buy-link:before {
+		width: 16px;
+		height: 6px;
+		margin-top: -3px;
+	}
+    /*---------------
+        Main section
+	---------------*/
+	.first-img {
+		padding-bottom: 156.2%;
+	}
+
+	.first-section__logo {
+		left: 6%;
+		top: 21%;
+		max-width: 27%;
+	}
+
+	.first-section__info{
+		right: 20px;
+
+		bottom: 20%;
+	}
+
+	.first-section__name {
+		font-size: 24px;
+		line-height: 24px;
+		width: 190px;
+
+		/* filter: drop-shadow(4.85207px 4.85207px 0.970414px #AD1E67); */
+	}
+
+	.first-section__name span {
+		padding: 2px 8px 1px;
+
+		box-shadow: 4.85207px 4.85207px 0.970414px #AD1E67;
+	}
+
+	.first-section__name span + span{
+		margin-top: 1.5px;
+	}
+
+	.first-section__link{
+		line-height: 28px;
+	}
+
+
+	.about-logo img{
+		width: 142px;
+	}
+
+	.about-desc{
+		max-width: 280px;
+	}
+
+	.about-desc br{
+		display: none;
+	}
+
+	.about-abgImg {
+		width: 114px;
+		bottom: -38px;
+		left: -12px;
+	}
+
+
+	.logo-anim {
+		padding: 8px 0;
+	}
+
+	.logo-anim__item{
+		margin: 0 3px;
+	}
+
+	.product-img{
+		display: none;
+	}
+
+	.product-images{
+		width: calc(100% - 20px);
+		margin-right: 20px;
+		margin-left: 0;
+		transition: margin .2s linear;
+
+		overflow: visible;
+	}
+
+	.product-images.all_slide{
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+
+	.product-images.last_slide{
+		margin-left: 20px;
+		margin-right: 0;
+	}
+
+	.product-images__wrap{
+		height: 100%;
+		margin: 0;
+	}
+
+	.product-images__img{
+		height: 100%;
+		border: none;
+	}
+
+	.product-images__img_mob{
+		display: block;
+	}
+
+	.product-images__img picture,
+	.product-video{
+		min-height: 1px;
+	}
+
+	.product-images__pag{
+		display: block;
+	}
+
+	.product-landing__colR{
+		padding-top: 30px;
+	}
+
+	.product-landing__code{
+		font-size: 10px;
+		line-height: 12px;
+	}
+
+	.product-landing__name{
+		font-size: 18px;
+		line-height: 22px;
+		margin-top: 10px;
+	}
+
+	.product-landing__title{
+		margin-top: 10px;
+
+		font-size: 12px;
+		line-height: 20px;
+	}
+
+	.product-landing__title span{
+		padding: 0 14px;
+	}
+
+	.product-landing__info{
+		font-size: 24px;
+	}
+
+	.product-abgImg1 {
+		width: 83px;
+		bottom: -29px;
+		right: -14px;
+	}
+
+	.product-abgImg3 {
+		width: 92px;
+		bottom: -35px;
+	}
+
+	.info-chart{
+		width: 280px;
+
+		padding-bottom: 103px;
+	}
+
+	.info-chart__circle{
+		width: 80px;
+		height: 80px;
+	}
+
+	.info-chart__title {
+		font-size: 15px;
+		line-height: 17px;
+	}
+
+	.info-chart__subtitle {
+		font-size: 8px;
+		line-height: 9px;
+	}
+
+	.info-chart__circle::after {
+		bottom: -20px;
+		width: 120px;
+		height: 62px;
+	}
+
+	.info-chart__icon{
+		height: 18px;
+	}
+
+	.info-chart__name{
+		font-size: 8px;
+		line-height: 9px;
+
+		margin-top: 6px;
+	}
+
+	.info-chart__item1{
+		width: 70px;
+		height: 69px;
+	}
+
+	.info-chart__item2{
+		width: 81px;
+		height: 83px;
+		top: 44px;
+		left: 27px;
+
+		padding-top: 20px;
+	}
+
+	.info-chart__item5{
+		width: 70px;
+		height: 69px;
+	}
+
+	.info-chart__item4{
+		width: 81px;
+		height: 83px;
+		top: 44px;
+		right: 27px;
+
+		padding-top: 20px;
+	}
+
+	.info-chart__item3{
+		width: 84px;
+		height: 67px;
+		margin-left: -42px;
+
+		padding-top: 14px;
+	}
+
+	.info-chart__items {
+		height: 138px;
+	}
+
+	.info-chart__desc {
+		top: 54px;
+		width: 112px;
+		margin-left: -56px;
+		font-size: 10px;
+		line-height: 12px;
+
+		display: none;
+	}
+
+	.info-chart__desc:before {
+		top: -6px;
+		width: 16px;
+		height: 16px;
+		margin-left: -8px;
+	}
+
+	.info-chart__desc span{
+		min-height: 60px;
+		padding: 8px 5px;
+	}
+
+	.info-chart__item3 .info-chart__desc {
+		top: 60px;
+	}
+	
+	.info-chart__item2 .info-chart__desc {
+		margin-left: -51px;
+		top: 70px;
+	}
+
+	.info-chart__item4 .info-chart__desc {
+		top: 70px;
+		margin-left: -57px;
+	}
+
+	
+	.mob-chart{
+		display: block;
+	}
+
+
+    .section-social__title
+    {
+        font-size: 14px;
+        line-height: 21px;
+
+        margin-bottom: 8px;
+    }
+
+    .section-social__desc
+    {
+        margin-bottom: 16px;
+    }
+
+    .social-list__item + .social-list__item
+    {
+        margin-left: 13px;
+    }
+
+    .social-list__item a
+    {
+        width: 34px;
+        height: 34px;
+    }
+}
